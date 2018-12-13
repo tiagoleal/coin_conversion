@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 #rspec-rails is a testing framework for Rails 3.x and 4.x.
 gem 'rspec-rails', '~> 3.5'
+gem 'rest-client'
+gem 'webmock'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
