@@ -2,6 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).ready ->
+  $('.inverter').click ->
+    source_currency = $("#source_currency").val()
+    target_currency = $("#target_currency").val()
+    $('#source_currency').val(target_currency)
+    $('#target_currency').val(source_currency)
+    api()
+  $('#amount').keyup -> api()
   #consulta api
   api = () ->
     if $("#source_currency").val()
@@ -21,16 +28,9 @@ $(document).ready ->
             $('#result').val(result)
         return false;
 
-  $('.inverter').click ->
-    source_currency = $("#source_currency").val()
-    target_currency = $("#target_currency").val()
 
-    $('#source_currency').val(target_currency)
-    $('#target_currency').val(source_currency)
-    api()
 
-  $('#amount').keyup ->
-    api()
+
 
 #backup antigo
 # Place all the behaviors and hooks related to the matching controller here.
