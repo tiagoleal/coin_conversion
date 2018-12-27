@@ -16,7 +16,7 @@ class ExchangeServiceBitcoin
       res = RestClient.get url_coin_desk
       value = JSON.parse(res.body)['bpi']["#{@target_currency}"]['rate_float'].to_f
 
-      # se a origem for bitcoin valor x amount senao amount / valor
+      # if the origin is bitcoin calculate value x amount else amount / value
       @source_currency == "BTC" ? value * @amount : ("%.20f" % @amount.fdiv(value)).sub(/\.?0*$/, "")
 
     rescue RestClient::ExceptionWithResponse => e

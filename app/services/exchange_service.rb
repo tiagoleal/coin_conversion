@@ -16,7 +16,7 @@ class ExchangeService
       res = RestClient.get url
       value = JSON.parse(res.body)['currency'][0]['value'].to_f
 
-      value * @amount #return nao precisa colocar o return
+      value * @amount
     rescue RestClient::ExceptionWithResponse => e
       e.response
     end

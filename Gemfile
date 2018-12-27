@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-#versão do ruby
+#ruby version
 ruby '2.5.1'
 
 #rspec-rails is a testing framework for Rails 3.x and 4.x.
