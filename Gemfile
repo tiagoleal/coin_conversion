@@ -3,12 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 #ruby version
 ruby '2.5.1'
-
 #rspec-rails is a testing framework for Rails 3.x and 4.x.
 gem 'rspec-rails', '~> 3.5'
+#Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions
 gem 'rest-client'
+# Library for stubbing and setting expectations on HTTP requests in Ruby.
 gem 'webmock'
-
+# A gem to automate using jQuery with Rails
+gem 'jquery-rails'
+# Use Service Worker with the Rails asset pipeline
+gem 'serviceworker-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
@@ -21,7 +25,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

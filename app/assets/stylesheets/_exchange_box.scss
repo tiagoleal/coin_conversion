@@ -33,6 +33,7 @@
 }
 
 @media only screen and (max-width : 992px) {
+
   .card-header {
     font-size: 25px;
     font-weight: bold;
@@ -40,7 +41,7 @@
 
   .title{
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .form-group {
@@ -62,6 +63,55 @@
 
   .btn-exchange {
     font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+
+@media only screen and (max-width : 750px) {
+
+  .title-box, .main{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .img-fluid{
+    width: 150px;
+    margin-left: 6em;
+  }
+
+  .card-header {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .title{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .subtitle{
+    font-size: 22px !important;;
+  }
+
+  .form-group {
+    select {
+      font-size: 15px;
+      height: 40px !important;
+    }
+
+    input {
+      font-size: 15px;
+      height: 40px;
+    }
+  }
+
+  #result {
+    margin-bottom: 20px;
+  }
+
+  .btn-exchange {
+    font-size: 15px;
     font-weight: bold;
   }
 }
