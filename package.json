@@ -3,6 +3,7 @@
     "node": ">=6"
   },
   "name": "OneBitExchange",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",
