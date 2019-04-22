@@ -23,6 +23,22 @@
 
 Performs the conversion of an amount X of one currency (for example BRL) into a corresponding amount of another (for example EUR).
 
+
+## Screenshot
+<p align="center">
+  <a href="https://onebitexchange-tleal.herokuapp.com/"><img alt="Coin Convertion" src="https://github.com/tiagoleal/coin_conversion/blob/master/public/app.png?raw=true" width="720px"></a>
+</p>
+
+## Stack the Project
+
+* **Yarn**
+* **Rest-client**
+* **Postgresql**
+* **Codeship**
+* **Rspec**
+* **PWA**
+* **Heroku**
+
 ## Features
 
 * **Convert to Bitcoin:** Realize the conversion of the selected coin for bitcoin.
